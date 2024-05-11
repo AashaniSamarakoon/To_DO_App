@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">To Do</string>
+    <string name="To_Do_Tasks">Add a new task</string>
+
+    <string name="add_task_description">Add a new task</string>
+
+</resources>
