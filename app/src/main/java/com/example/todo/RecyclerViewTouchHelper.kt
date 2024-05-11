@@ -2,7 +2,6 @@ package com.example.todo
 
 
 import android.app.AlertDialog
-import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
 import androidx.core.content.ContextCompat
@@ -11,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.todo.adapter.ToDoAdapter
 import it.xabaras.android.recyclerview.swipedecorator.RecyclerViewSwipeDecorator
 
+
 class RecyclerViewTouchHelper(private val adapter: ToDoAdapter) :
     ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT) {
-
     override fun onMove(
         recyclerView: RecyclerView,
         viewHolder: RecyclerView.ViewHolder,
@@ -60,7 +59,10 @@ class RecyclerViewTouchHelper(private val adapter: ToDoAdapter) :
             isCurrentlyActive
         )
             .addSwipeLeftBackgroundColor(
-                ContextCompat.getColor(adapter.getContext()!!, R.color.colorPrimaryDark)
+                ContextCompat.getColor(
+                    adapter.getContext()!!,
+                    R.color.colorPrimaryDark
+                )
             )
             .addSwipeLeftActionIcon(R.drawable.baseline_edit_24)
             .addSwipeRightBackgroundColor(Color.RED)

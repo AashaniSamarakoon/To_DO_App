@@ -1,8 +1,8 @@
-package com.example.todo.Adapter
+package com.example.todo;
 
 import android.content.DialogInterface
 
 
-interface OnDialogCloseListner {
+interface OnDialogCloseListener {
     fun onDialogClose(dialogInterface: DialogInterface?)
 }

@@ -1,5 +1,6 @@
 package com.example.todo
 
+
 import android.app.Activity
 import android.content.DialogInterface
 import android.graphics.Color
@@ -11,8 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import com.example.todo.Adapter.OnDialogCloseListner
-import com.example.todo.OndialogCloseListner
+import com.example.todo.OnDialogCloseListener
 
 
 
@@ -20,9 +20,7 @@ import com.example.todo.model.ToDoModel
 import com.example.todo.utils.DataBaseHelper
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-interface OndialogCloseListner {
 
-}
 
 class AddNewTask : BottomSheetDialogFragment() {
     //widgets
@@ -84,8 +82,8 @@ class AddNewTask : BottomSheetDialogFragment() {
     override fun onDismiss(dialog: DialogInterface) {
         super.onDismiss(dialog)
         val activity: Activity? = activity
-        if (activity is OndialogCloseListner) {
-            (activity as OnDialogCloseListner).onDialogClose(dialog)
+        if (activity is OnDialogCloseListener) {
+            (activity as OnDialogCloseListener).onDialogClose(dialog)
         }
     }
 
