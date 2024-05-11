@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:background="@color/colorBlack">
+
+    </RelativeLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,8 +23,9 @@
         android:layout_marginEnd="8dp"
         android:drawablePadding="15dp"
         android:text="To Do"
+        android:fontFamily="casual"
         android:textColor="@color/colorWhite"
-        android:textSize="90sp"
+        android:textSize="100sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
