@@ -6,19 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/material_dynamic_tertiary70"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:layout_width="383dp"
+            android:layout_height="272dp"
+            android:padding="20sp"
+            android:src="@drawable/icon"
+
+            />
+    </RelativeLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:drawablePadding="15dp"
-        android:text="To Do"
-        android:textColor="@color/colorWhite"
-        android:textSize="90sp"
+        android:fontFamily="casual"
+        android:text="MY TASK"
+        android:textColor="@color/material_dynamic_tertiary40"
+        android:textSize="85sp"
         android:textStyle="bold"
+        app:autoSizeTextType="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

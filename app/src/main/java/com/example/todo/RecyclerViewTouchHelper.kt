@@ -61,11 +61,11 @@ class RecyclerViewTouchHelper(private val adapter: ToDoAdapter) :
             .addSwipeLeftBackgroundColor(
                 ContextCompat.getColor(
                     adapter.getContext()!!,
-                    R.color.colorPrimaryDark
+                    R.color.colorBlack
                 )
             )
             .addSwipeLeftActionIcon(R.drawable.baseline_edit_24)
-            .addSwipeRightBackgroundColor(Color.RED)
+            .addSwipeRightBackgroundColor(Color.parseColor("#BD081C"))
             .addSwipeRightActionIcon(R.drawable.baseline_delete_24)
             .create()
             .decorate()
