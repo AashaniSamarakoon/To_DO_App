@@ -9,15 +9,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawablePadding="15dp"
+        android:text="To Do"
+        android:textColor="@color/colorWhite"
+        android:textSize="90sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="To Do App"
-        android:textColor="@color/colorWhite"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:drawablePadding="15dp"
-        android:drawableRight="@drawable/baseline_done_all_24"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
